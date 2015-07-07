@@ -43,6 +43,32 @@ var MyComponent = function () {
     );
 });
 ```
-
 #### Which (when rendered) will output:
 ![Example](https://raw.githubusercontent.com/DylanPiercey/Syntux/master/example.png)
+
+# Usage with Marked (Markdown)
+```javascript
+var React = require("react");
+var marked = require("marked");
+var syntux = require("syntux");
+
+// Ensure needed languages are available.
+require("syntusk/javascript");
+require("syntusk/css");
+require("syntusk/xml");
+
+// Set code renderer.
+var renderer = new marked.Renderer();
+
+renderer.code = function(code, lang) {
+    lang = lang.toLowerCase();
+    code = syntux.highlight(lang, code, true).value;
+    return '<pre><code class="hljs ' + lang + '">' + code + '</code></pre>';
+};
+
+marked.setOptions({ renderer: renderer });
+
+// Use it!
+marked("```javascript var x = 1;```")
+```
+
