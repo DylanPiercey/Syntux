@@ -1,0 +1,24 @@
+{
+  "name": "syntux",
+  "version": "0.3.2",
+  "description": "Highlight.js optimized for browserify and react.",
+  "author": "Dylan Piercey <pierceydylan@gmail.com>",
+  "license": "MIT",
+  "main": "lib/index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/DylanPiercey/syntux.git"
+  },
+  "scripts": {
+    "build": "npm install gulp && gulp build",
+    "postinstall": "npm install gulp && gulp build"
+  },
+  "peerDependencies": {
+    "react": "0.x"
+  },
+  "dependencies": {
+    "cssmin": "^0.4.3",
+    "gulp": "^3.9.0",
+    "highlight.js": "^8.6.0"
+  }
+}
