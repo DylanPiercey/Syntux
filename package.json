@@ -1,6 +1,6 @@
 {
   "name": "syntux",
-  "version": "0.4.0",
+  "version": "0.4.1",
   "description": "Highlight.js optimized for browserify and react.",
   "author": "Dylan Piercey <pierceydylan@gmail.com>",
   "license": "MIT",
