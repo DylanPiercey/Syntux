@@ -1,6 +1,6 @@
 {
   "name": "syntux",
-  "version": "0.4.2",
+  "version": "0.4.3",
   "description": "Highlight.js optimized for browserify and react.",
   "author": "Dylan Piercey <pierceydylan@gmail.com>",
   "license": "MIT",
@@ -13,7 +13,7 @@
     "postinstall": "node ./lib/build.js"
   },
   "peerDependencies": {
-    "react": "0.x"
+    "react": "0.x || ^15.0.1"
   },
   "dependencies": {
     "cssmin": "^0.4.3",
